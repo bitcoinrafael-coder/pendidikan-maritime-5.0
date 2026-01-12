@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Pendidikan & Riset Maritim 5.0</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--main:#0a6cff;
+--accent:#00e0ff;
+--bg:#070d1c;
+--card:#0f1b35;
+--soft:#a8c7ff;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Poppins,sans-serif;background:var(--bg);color:#eaf1ff}
+nav{position:fixed;top:0;width:100%;background:rgba(5,10,25,0.95);backdrop-filter:blur(8px);display:flex;justify-content:center;gap:22px;padding:14px;z-index:1000;box-shadow:0 2px 20px rgba(0,200,255,0.2)}
+nav a{color:var(--soft);text-decoration:none;font-weight:500;transition:.3s}
+nav a:hover{color:white}
+header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:radial-gradient(circle at top,#0a6cff22,transparent 60%),linear-gradient(135deg,#040818,#081b3a)}
+header h1{font-size:3em;margin-bottom:10px;background:linear-gradient(135deg,#fff,#00e0ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{max-width:820px;margin:auto;font-size:1.1em;color:#cfe2ff}
+.hero-btn{margin-top:30px;display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+button{background:linear-gradient(135deg,var(--main),var(--accent));border:none;color:#001;padding:12px 22px;border-radius:30px;font-weight:600;cursor:pointer;transition:.3s}
+button:hover{opacity:.9;transform:translateY(-2px)}
+section{padding:100px 8%}
+h2{color:var(--accent);margin-bottom:10px;font-size:2em}
+.sub{color:#9fbfff;max-width:700px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:var(--card);border-radius:18px;padding:25px;box-shadow:0 10px 30px rgba(0,0,0,.4);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.card h3{color:var(--accent);margin-top:0}
+.list{line-height:1.8}
+.list li{margin-bottom:8px}
+.popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(4px);justify-content:center;align-items:center;z-index:2000}
+.popup-box{background:var(--card);padding:35px;max-width:800px;width:90%;max-height:85vh;overflow-y:auto;border-radius:20px;box-shadow:0 0 50px #00e0ff;border:2px solid var(--accent)}
+.popup-box h2{margin-top:0}
+.popup-box h3{color:var(--accent);margin-top:20px}
+.ref-link{color:#00e0ff;text-decoration:none;display:block;margin:10px 0;padding:10px;background:rgba(0,200,255,0.1);border-radius:8px;transition:.3s}
+.ref-link:hover{background:rgba(0,200,255,0.2)}
+.ref{color:#00e0ff;cursor:pointer;font-weight:600;text-decoration:underline}
+.ref:hover{color:#fff}
+footer{background:#040814;text-align:center;padding:30px;color:#88aaff}
+@media(max-width:768px){
+header h1{font-size:2em}
+section{padding:60px 5%}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home">Beranda</a>
+<a href="#pendidikan">Pendidikan</a>
+<a href="#riset">Riset</a>
+<a href="#autonomous">Autonomous</a>
+<a href="#roadmap">Roadmap</a>
+</nav>
+
+<header id="home">
+<div>
+<h1>Portal Pendidikan & Riset Maritim 5.0</h1>
+<p>Membangun ekosistem pendidikan, riset, dan teknologi maritim Indonesia menuju era sistem cerdas dan autonomous berbasis standar global.</p>
+<div class="hero-btn">
+<a href="#pendidikan"><button>Pendidikan</button></a>
+<a href="#riset"><button>Riset</button></a>
+<a href="#roadmap"><button>Roadmap</button></a>
+</div>
+</div>
+</header>
+
+<section>
+<h2>Mengapa Portal Ini Dibangun</h2>
+<p class="sub">
+Transformasi kemaritiman dunia bergerak ke arah integrasi teknologi, kecerdasan buatan, dan sistem otonom. Portal ini menjadi pusat pengembangan pendidikan dan riset maritim modern yang adaptif dan berkelanjutan, mengacu pada standar IMO dan best practices global <span class="ref" onclick="openRef(1)">[1]</span>.
+</p>
+
+<div class="grid">
+<div class="card"><h3>🎓 Pendidikan Maritim</h3><p>Transformasi kurikulum, metode belajar, dan ekosistem taruna berbasis teknologi.</p></div>
+<div class="card"><h3>🔬 Riset & Inovasi</h3><p>Riset terapan berbasis data dan kebutuhan industri global.</p></div>
+<div class="card"><h3>🤖 MASS & Autonomous</h3><p>Pengembangan sistem kapal otonom sesuai framework IMO <span class="ref" onclick="openRef(1)">[1]</span>.</p></div>
+<div class="card"><h3>🧭 Roadmap Institusi</h3><p>Peta jalan pengembangan pendidikan dan riset berkelanjutan.</p></div>
+</div>
+</section>
+
+<section id="pendidikan">
+<h2>Transformasi Pendidikan Maritim 5.0</h2>
+<p class="sub">Mempersiapkan taruna sebagai operator, analis, dan inovator sistem maritim masa depan dengan integrasi AI dan IoT <span class="ref" onclick="openRef(2)">[2]</span> <span class="ref" onclick="openRef(4)">[4]</span>.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Sistem Pendidikan</h3>
+<ul class="list">
+<li>Smart curriculum berbasis industri 4.0</li>
+<li>Digital learning ecosystem</li>
+<li>Simulator & AI integration</li>
+<li>Riset taruna berbasis data real-time</li>
+<li>IoT sensor training untuk monitoring kapal</li>
+</ul>
+<button onclick="openPopup('edu')">Lihat Konsep Sistem</button>
+</div>
+
+<div class="card">
+<h3>Implementasi Teknologi</h3>
+<ul class="list">
+<li>Kelas berbasis AI dan Machine Learning</li>
+<li>Proyek riset terapan dengan industri</li>
+<li>Smart laboratory dengan sensor IoT</li>
+<li>Simulasi MASS dan autonomous vessel</li>
+<li>Predictive maintenance training</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="riset">
+<h2>Riset & Inovasi Maritim</h2>
+<p class="sub">Riset dikembangkan berbasis permasalahan industri dan visi teknologi masa depan, mengacu pada standar IMO MASS Code <span class="ref" onclick="openRef(1)">[1]</span> dan penelitian AI maritim global <span class="ref" onclick="openRef(2)">[2]</span> <span class="ref" onclick="openRef(3)">[3]</span>.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Fokus Riset Utama</h3>
+<ul class="list">
+<li>Maritime Autonomous Surface Ships (MASS)</li>
+<li>AI-powered navigation & collision avoidance <span class="ref" onclick="openRef(2)">[2]</span></li>
+<li>IoT sensors untuk monitoring kapal <span class="ref" onclick="openRef(4)">[4]</span></li>
+<li>Predictive maintenance systems <span class="ref" onclick="openRef(3)">[3]</span></li>
+<li>Green shipping & emission reduction</li>
+<li>Smart port automation</li>
+<li>Cyber security untuk sistem kapal</li>
+</ul>
+<button onclick="openPopup('research')">Model Riset Terapan</button>
+</div>
+
+<div class="card">
+<h3>Kolaborasi Global</h3>
+<ul class="list">
+<li>Partnership dengan institusi maritim internasional</li>
+<li>Implementasi IMO guidelines</li>
+<li>Joint research dengan industri</li>
+<li>Technology transfer program</li>
+<li>Publication dalam jurnal internasional</li>
+</ul>
+<button onclick="openRef(5)">Lihat Referensi Riset</button>
+</div>
+</div>
+</section>
+
+<section id="autonomous">
+<h2>MASS & Autonomous Maritime System</h2>
+<p class="sub">Pengembangan sistem kapal cerdas berbasis sensor fusion, AI, dan kendali otomatis sesuai IMO MASS Framework <span class="ref" onclick="openRef(1)">[1]</span>. Market AI maritim diproyeksikan tumbuh 23% per tahun hingga 2029 <span class="ref" onclick="openRef(6)">[6]</span>.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Teknologi MASS</h3>
+<ul class="list">
+<li>Degree 1-4 autonomy (IMO standard)</li>
+<li>Remote Operations Centre (ROC)</li>
+<li>AI-based decision support systems</li>
+<li>Sensor fusion & computer vision</li>
+<li>Autonomous navigation algorithms</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Aplikasi IoT Maritime</h3>
+<ul class="list">
+<li>Real-time vessel tracking & monitoring <span class="ref" onclick="openRef(4)">[4]</span></li>
+<li>Predictive maintenance sensors</li>
+<li>Environmental compliance monitoring</li>
+<li>Safety & security systems</li>
+<li>Fuel optimization analytics</li>
+</ul>
+</div>
+</div>
+
+<div class="card" style="margin-top:25px">
+<button onclick="openPopup('auto')">Lihat Kerangka Autonomous System</button>
+</div>
+</section>
+
+<section id="roadmap">
+<h2>Roadmap Pengembangan</h2>
+<p class="sub">Timeline pengembangan infrastruktur pendidikan dan riset maritim 5.0</p>
+
+<div class="grid">
+<div class="card">
+<h3>Tahap 1 (2025-2026)</h3>
+<p><strong>Fondasi Digital</strong></p>
+<ul class="list">
+<li>Digitalisasi kurikulum</li>
+<li>Platform pembelajaran online</li>
+<li>Database riset & publikasi</li>
+<li>Pelatihan SDM teknologi</li>
+<li>Kerjasama industri</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tahap 2 (2026-2028)</h3>
+<p><strong>Smart Laboratory</strong></p>
+<ul class="list">
+<li>IoT sensor laboratory</li>
+<li>AI & ML research center</li>
+<li>MASS simulator facility</li>
+<li>Riset terapan industri</li>
+<li>Publication & patent</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tahap 3 (2028-2030)</h3>
+<p><strong>Global Integration</strong></p>
+<ul class="list">
+<li>Autonomous system testbed</li>
+<li>International collaboration</li>
+<li>Research center of excellence</li>
+<li>Industry 5.0 readiness</li>
+<li>IMO MASS Code compliance</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section style="background:var(--card);border-radius:20px;padding:40px;margin:40px 8%">
+<h2>📚 Dokumen & Media</h2>
+<p class="sub">Akses dokumen riset, proposal, video presentasi, dan media pendukung lainnya</p>
+
+<div class="grid">
+<div class="card" style="cursor:pointer" onclick="openDoc('proposal')">
+<h3>📄 Proposal Riset</h3>
+<p>Dokumen lengkap proposal Maritime Nation Edu 5.0</p>
+</div>
+
+<div class="card" style="cursor:pointer" onclick="openDoc('roadmap-detail')">
+<h3>🗺️ Roadmap Detail</h3>
+<p>Timeline pengembangan tahap per tahap</p>
+</div>
+
+<div class="card" style="cursor:pointer" onclick="openDoc('video')">
+<h3>🎥 Video Presentasi</h3>
+<p>Penjelasan visual konsep dan implementasi</p>
+</div>
+
+<div class="card" style="cursor:pointer" onclick="openDoc('galeri')">
+<h3>🖼️ Galeri Kegiatan</h3>
+<p>Foto-foto laboratorium, riset, dan kegiatan</p>
+</div>
+</div>
+</section>
+
+<footer>
+Portal Pendidikan & Riset Maritim 5.0 — Indonesia<br>
+<small>Dikembangkan sesuai standar IMO dan best practices global</small>
+</footer>
+
+<div class="popup" id="popup">
+<div class="popup-box" id="popupBox"></div>
+</div>
+
+<script>
+// GANTI FILE_ID dengan ID file Google Drive Anda
+const driveFiles = {
+proposal: "1ABC123xyz", // Ganti dengan FILE_ID dari Google Drive
+roadmap: "1DEF456abc",
+video: "1GHI789def",
+gallery: "1JKL012ghi"
+};
+
+const references = {
+1: {
+title: "IMO - Maritime Autonomous Surface Ships (MASS)",
+desc: "International Maritime Organization telah menyelesaikan regulatory scoping exercise untuk MASS pada 2021 dan mengembangkan MASS Code yang akan mandatory pada 2032. Framework ini mencakup 4 derajat autonomy dan mengatur peran master, crew, dan remote operations centre.",
+link: "https://www.imo.org/en/mediacentre/hottopics/pages/autonomous-shipping.aspx",
+type: "IMO Regulatory Framework"
+},
+2: {
+title: "Artificial Intelligence in Maritime Transportation",
+desc: "AI dalam maritim mencakup autonomous navigation, collision avoidance, predictive maintenance, smart port operations, dan route optimization. Teknologi AI memungkinkan kapal menganalisis data real-time untuk keputusan yang lebih aman dan efisien.",
+link: "https://www.mdpi.com/2077-1312/12/3/439",
+type: "Research Journal - MDPI"
+},
+3: {
+title: "AI in Maritime Safety and Risk Management",
+desc: "Systematic review tentang aplikasi AI untuk safety maritim mencakup risk analysis, crew resource management, hazardous material handling, predictive maintenance, dan navigation systems. AI membantu identifikasi hazard dan real-time decision support.",
+link: "https://www.mdpi.com/2076-3417/14/18/8420",
+type: "Research Journal - Applied Sciences"
+},
+4: {
+title: "IoT in Maritime Safety - Comprehensive Review",
+desc: "Review komprehensif tentang IoT untuk maritime safety mencakup sensor deployment, predictive analytics, real-time environmental monitoring, ship-to-shore communication, dan automated safety systems. IoT sensors monitor emissions, structural integrity, dan safety equipment.",
+link: "https://www.mdpi.com/2076-3417/13/17/9742",
+type: "Research Journal - MDPI"
+},
+5: {
+title: "Utilizing AI for Maritime Transport Optimization",
+desc: "Research dari California Management Review tentang 7 area aplikasi AI maritim: autonomous vessels, dynamic route optimization, predictive maintenance, port automation, environmental monitoring, fleet management, dan smart cargo handling.",
+link: "https://cmr.berkeley.edu/2024/12/utilizing-ai-for-maritime-transport-optimization/",
+type: "Academic Research - UC Berkeley"
+},
+6: {
+title: "The Rapid Rise of AI in Maritime - Lloyd's Register",
+desc: "Report Thetius yang commissioned oleh Lloyd's Register menunjukkan maritime AI market mencapai USD 4.13 miliar dengan proyeksi pertumbuhan 23% per tahun. Mencakup 6 area kritis: predictive maintenance, port management, navigation safety, emission monitoring, dan autonomous systems.",
+link: "https://www.lr.org/en/knowledge/press-room/press-listing/press-release/2024/lloyds-register-commissioned-research-reveals-the-rapid-rise-of-ai-in-maritime/",
+type: "Industry Report - Lloyd's Register"
+}
+};
+
+function openRef(num) {
+const r = references[num];
+if (!r) return;
+
+const content = `
+<h2>${r.title}</h2>
+<p><strong>Tipe:</strong> ${r.type}</p>
+<p>${r.desc}</p>
+<a href="${r.link}" target="_blank" class="ref-link">🔗 Buka Sumber Asli →</a>
+<br><button onclick="closePopup()">Tutup</button>
+`;
+
+document.getElementById('popupBox').innerHTML = content;
+document.getElementById('popup').style.display = 'flex';
+}
+
+function openPopup(type) {
+let c = '';
+
+if (type === 'edu') {
+c = `<h2>Sistem Pendidikan Maritim 5.0</h2>
+<p>Model pendidikan terintegrasi yang menggabungkan:</p>
+<h3>1. Smart Curriculum</h3>
+<p>Kurikulum adaptif berbasis kebutuhan industri maritim global, mencakup AI, IoT, autonomous systems, dan data analytics.</p>
+<h3>2. Digital Learning Platform</h3>
+<p>Platform pembelajaran online dengan simulator, virtual lab, dan akses ke database riset internasional.</p>
+<h3>3. Industry Partnership</h3>
+<p>Kolaborasi dengan shipping companies, classification societies, dan technology providers untuk hands-on experience.</p>
+<h3>4. Research Integration</h3>
+<p>Setiap taruna terlibat dalam riset terapan dengan publikasi di jurnal nasional/internasional.</p>`;
+}
+
+if (type === 'research') {
+c = `<h2>Model Riset Terapan Maritim</h2>
+<p>Framework riset berbasis industry problem-solving:</p>
+<h3>1. Identify Industry Challenges</h3>
+<p>Mapping permasalahan aktual dari industri pelayaran, pelabuhan, dan galangan kapal.</p>
+<h3>2. Data-Driven Research</h3>
+<p>Menggunakan AIS data, sensor IoT, dan maritime big data untuk analisis prediktif.</p>
+<h3>3. Prototype Development</h3>
+<p>Mengembangkan prototipe solusi teknologi yang dapat diimplementasikan di lapangan.</p>
+<h3>4. Publication & Dissemination</h3>
+<p>Publikasi hasil riset di jurnal internasional terindeks dan conference proceedings.</p>
+<h3>5. Technology Transfer</h3>
+<p>Transfer teknologi ke industri melalui patent, licensing, atau startup incubation.</p>`;
+}
+
+if (type === 'auto') {
+c = `<h2>Autonomous Maritime System Framework</h2>
+<p>Berdasarkan IMO MASS Code dan best practices global:</p>
+<h3>Degree of Autonomy (IMO Classification)</h3>
+<p><strong>Degree 1:</strong> Ship dengan automated processes dan decision support<br>
+<strong>Degree 2:</strong> Remotely controlled ship dengan seafarers on board<br>
+<strong>Degree 3:</strong> Remotely controlled ship tanpa seafarers on board<br>
+<strong>Degree 4:</strong> Fully autonomous ship</p>
+<h3>Komponen Teknologi</h3>
+<p>• Sensor Fusion (Radar, LIDAR, Camera, GPS, AIS)<br>
+• AI Navigation & Collision Avoidance<br>
+• Remote Operations Centre (ROC)<br>
+• Cybersecurity System<br>
+• Predictive Maintenance AI<br>
+• Environmental Monitoring IoT</p>
+<h3>Research Focus Areas</h3>
+<p>• Autonomous navigation algorithms<br>
+• Human-machine interface untuk ROC<br>
+• Fail-safe dan redundancy systems<br>
+• Regulatory compliance automation<br>
+• Real-time decision support systems</p>`;
+}
+
+document.getElementById('popupBox').innerHTML = c + '<br><br><button onclick="closePopup()">Tutup</button>';
+document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+document.getElementById('popup').style.display = 'none';
+}
+
+function openDoc(type) {
+let content = '';
+let driveLink = '';
+
+if (type === 'proposal') {
+// CARA 1: Link ke Google Drive (ganti FILE_ID)
+driveLink = `https://drive.google.com/file/d/${driveFiles.proposal}/preview`;
+content = `
+<h2>📄 Proposal Maritime Nation Edu 5.0</h2>
+<p>Dokumen lengkap proposal pengembangan pendidikan maritim Indonesia</p>
+<iframe src="${driveLink}" width="100%" height="500px" style="border:none;border-radius:10px;margin:20px 0"></iframe>
+<a href="https://drive.google.com/uc?export=download&id=${driveFiles.proposal}" target="_blank" class="ref-link">⬇️ Download PDF</a>
+<a href="https://drive.google.com/file/d/${driveFiles.proposal}/view" target="_blank" class="ref-link">🔗 Buka di Google Drive</a>
+`;
+}
+
+if (type === 'roadmap-detail') {
+// CARA 2: Upload PDF ke folder /documents/roadmap.pdf di GitHub
+content = `
+<h2>🗺️ Roadmap Pengembangan Detail</h2>
+<p>Timeline lengkap pengembangan infrastruktur maritim 5.0</p>
+<iframe src="documents/roadmap.pdf" width="100%" height="500px" style="border:none;border-radius:10px;margin:20px 0"></iframe>
+<a href="documents/roadmap.pdf" download class="ref-link">⬇️ Download Roadmap</a>
+<p style="color:#ff9900;margin-top:20px"><small>💡 Jika file belum tersedia, upload file PDF ke folder <strong>documents/</strong> di GitHub repository</small></p>
+`;
+}
+
+if (type === 'video') {
+// Video dari Google Drive
+driveLink = `https://drive.google.com/file/d/${driveFiles.video}/preview`;
+content = `
+<h2>🎥 Video Presentasi Maritime 5.0</h2>
+<p>Penjelasan konsep dan implementasi sistem maritim masa depan</p>
+<iframe src="${driveLink}" width="100%" height="400px" style="border:none;border-radius:10px;margin:20px 0" allow="autoplay"></iframe>
+<a href="https://drive.google.com/file/d/${driveFiles.video}/view" target="_blank" class="ref-link">🔗 Tonton di Google Drive</a>
+<p style="color:#ff9900;margin-top:20px"><small>💡 Upload video ke Google Drive, lalu ganti <strong>driveFiles.video</strong> dengan FILE_ID Anda</small></p>
+`;
+}
+
+if (type === 'galeri') {
+// Galeri gambar dari folder GitHub atau Google Drive
+content = `
+<h2>🖼️ Galeri Kegiatan</h2>
+<p>Dokumentasi kegiatan riset, laboratorium, dan pengembangan</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin:20px 0">
+<img src="assets/images/lab1.jpg" alt="Lab" style="width:100%;border-radius:10px" onerror="this.src='https://via.placeholder.com/300x200?text=Lab+1'">
+<img src="assets/images/lab2.jpg" alt="Lab" style="width:100%;border-radius:10px" onerror="this.src='https://via.placeholder.com/300x200?text=Lab+2'">
+<img src="assets/images/riset1.jpg" alt="Riset" style="width:100%;border-radius:10px" onerror="this.src='https://via.placeholder.com/300x200?text=Riset+1'">
+<img src="assets/images/riset2.jpg" alt="Riset" style="width:100%;border-radius:10px" onerror="this.src='https://via.placeholder.com/300x200?text=Riset+2'">
+</div>
+<p style="color:#ff9900;margin-top:20px"><small>💡 Upload gambar ke folder <strong>assets/images/</strong> di GitHub repository</small></p>
+<a href="https://drive.google.com/drive/folders/${driveFiles.gallery}" target="_blank" class="ref-link">🔗 Lihat Semua Galeri di Google Drive</a>
+`;
+}
+
+document.getElementById('popupBox').innerHTML = content + '<br><button onclick="closePopup()">Tutup</button>';
+document.getElementById('popup').style.display = 'flex';
+}
+
+document.getElementById('popup').onclick = function(e) {
+if (e.target === this) closePopup();
+};
+</script>
+
+</body>
+</html>
